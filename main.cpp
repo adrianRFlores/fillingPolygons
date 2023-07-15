@@ -157,19 +157,24 @@ void fillPolygon(const unsigned int x, const unsigned int y) {
 
 void render() {
 	clear();
-	//Vertex2 verts[3] = {Vertex2(377,249), Vertex2(411,197), Vertex2(436,249)};
+	Vertex2 poly3[3] = {Vertex2(377,249), Vertex2(411,197), Vertex2(436,249)};
 	//Vertex2 verts[4] = {Vertex2(100,100), Vertex2(150, 100), Vertex2(150,150), Vertex2(100, 150)};
 	//Vertex2 verts[4] = {Vertex2(682,175), Vertex2(708,120), Vertex2(735,148), Vertex2(739,170)};
-	Vertex2 poly4[18] = {Vertex2(413, 177), Vertex2(448, 159), Vertex2(502, 88), Vertex2(553, 53), Vertex2(535, 36), Vertex2(676, 37), Vertex2(660, 52), Vertex2(750, 145), Vertex2(761, 179), Vertex2(672, 192), Vertex2(659, 214), Vertex2(615, 214), Vertex2(632, 230), Vertex2(580, 230), Vertex2(597, 215), Vertex2(552, 214), Vertex2(517, 144), Vertex2(466, 180)};
-	Vertex2 poly5[4] = {Vertex2(682,175), Vertex2(708,120), Vertex2(735,148), Vertex2(739,170)};
+	//Vertex2 poly4[18] = {Vertex2(413, 177), Vertex2(448, 159), Vertex2(502, 88), Vertex2(553, 53), Vertex2(535, 36), Vertex2(676, 37), Vertex2(660, 52), Vertex2(750, 145), Vertex2(761, 179), Vertex2(672, 192), Vertex2(659, 214), Vertex2(615, 214), Vertex2(632, 230), Vertex2(580, 230), Vertex2(597, 215), Vertex2(552, 214), Vertex2(517, 144), Vertex2(466, 180)};
+	//Vertex2 poly5[4] = {Vertex2(682,175), Vertex2(708,120), Vertex2(735,148), Vertex2(739,170)};
 	//Vertex2 verts[10] = {Vertex2(165,380), Vertex2(185,360), Vertex2(180,330), Vertex2(207,345), Vertex2(233,330), Vertex2(230, 360), Vertex2(250,380), Vertex2(220,385), Vertex2(205,410), Vertex2(193,383)};
-	drawPolygon(poly4, sizeof(poly4)/sizeof(poly4[0]));
-	setCurrentColor(0,255,0);
-	fillPolygon(707, 148);
+	
+	drawPolygon(poly3, sizeof(poly3)/sizeof(poly3[0]));
+	setCurrentColor(255,0,0);
+	fillPolygon(416, 220);
 
-	drawPolygon(poly5, sizeof(poly5)/sizeof(poly5[0]));
-	setCurrentColor(0,0,0);
-	fillPolygon(707,148);
+	//drawPolygon(poly4, sizeof(poly4)/sizeof(poly4[0]));
+	//setCurrentColor(0,255,0);
+	//fillPolygon(707, 148);
+
+	//drawPolygon(poly5, sizeof(poly5)/sizeof(poly5[0]));
+	//setCurrentColor(0,0,0);
+	//fillPolygon(707,148);
 	//fillPolygon(200, 350);
 
 	renderBuffer();
