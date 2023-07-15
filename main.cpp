@@ -164,7 +164,7 @@ void render() {
 	Vertex2 poly5[4] = {Vertex2(682,175), Vertex2(708,120), Vertex2(735,148), Vertex2(739,170)};
 	//Vertex2 verts[10] = {Vertex2(165,380), Vertex2(185,360), Vertex2(180,330), Vertex2(207,345), Vertex2(233,330), Vertex2(230, 360), Vertex2(250,380), Vertex2(220,385), Vertex2(205,410), Vertex2(193,383)};
 	drawPolygon(poly4, sizeof(poly4)/sizeof(poly4[0]));
-	setCurrentColor(100,100,100);
+	setCurrentColor(0,255,0);
 	fillPolygon(707, 148);
 
 	drawPolygon(poly5, sizeof(poly5)/sizeof(poly5[0]));
